@@ -11,13 +11,13 @@
 // const str2 = minute;
 // alert(`${str1.padStart(2, "0")}:${str2.padStart(2, "0")}`);
 
-let number = Number(prompt("Введіть число (кількість хвилин):")); // Перетворюємо введення в число
+// let number = Number(prompt("Введіть число (кількість хвилин):")); // Перетворюємо введення в число
 
-const hours = Math.floor(number / 60); // Отримуємо години (ціла частина)
-const minutes = number % 60; // Залишок — це хвилини
+// const hours = Math.floor(number / 60); // Отримуємо години (ціла частина)
+// const minutes = number % 60; // Залишок — це хвилини
 
-// Перетворюємо числа в рядки та додаємо ведучі нулі
-const strHours = String(hours).padStart(2, "0");
-const strMinutes = String(minutes).padStart(2, "0");
+// // Перетворюємо числа в рядки та додаємо ведучі нулі
+// const strHours = String(hours).padStart(2, "0");
+// const strMinutes = String(minutes).padStart(2, "0");
 
-console.log(`${strHours}:${strMinutes}`); // Виводимо результат у консоль
+// console.log(`${strHours}:${strMinutes}`); // Виводимо результат у консоль
