@@ -454,54 +454,54 @@
   //  - department - відділ, в якому працює співробітник.
   // Крім того, клас `Employee` має мати метод `getEmployeeDetails()`, який повертає об'єкт з зарплатою співробітника та відділом, в якому він працює.
 
-class Person {
-    constructor(params) {
-        this.name = params.name;
-        this.age = params.age;
-        this.gender = params.gender;
-        this.email = params.email;
-    }
+// class Person {
+//     constructor(params) {
+//         this.name = params.name;
+//         this.age = params.age;
+//         this.gender = params.gender;
+//         this.email = params.email;
+//     }
     
-    getDetails() {
-        return {
-            name: this.name,
-            age: this.age,
-            gender: this.gender,
-            email: this.email
-        }
+//     getDetails() {
+//         return {
+//             name: this.name,
+//             age: this.age,
+//             gender: this.gender,
+//             email: this.email
+//         }
         
-    }
-}
-  const person1 = new Person({
-    name: 'John Doe',
-    age: 30,
-    gender: 'Male',
-    email: 'johndoe@example.com'
-});
+//     }
+// }
+//   const person1 = new Person({
+//     name: 'John Doe',
+//     age: 30,
+//     gender: 'Male',
+//     email: 'johndoe@example.com'
+// });
 
-console.log(person1.getDetails());
+// console.log(person1.getDetails());
 
-class Employee extends Person {
-    constructor(params, salary, department) {
-        super(params);
-        this.salary = params.salary;
-        this.department = params.department;
-    }
+// class Employee extends Person {
+//     constructor(params, salary, department) {
+//         super(params);
+//         this.salary = params.salary;
+//         this.department = params.department;
+//     }
 
-    getEmployeeDetails() {
-        return {
-            salary: this.salary,
-            department: this.department
-        }
-    }
-}
-// Приклад використання:
-const employee1 = new Employee({
-    name: 'Jane Smith',
-    age: 28,
-    gender: 'Female',
-    email: 'janesmith@example.com'
-}, 5000, 'HR');
+//     getEmployeeDetails() {
+//         return {
+//             salary: this.salary,
+//             department: this.department
+//         }
+//     }
+// }
+// // Приклад використання:
+// const employee1 = new Employee({
+//     name: 'Jane Smith',
+//     age: 28,
+//     gender: 'Female',
+//     email: 'janesmith@example.com'
+// }, 5000, 'HR');
 
-console.log(employee1.getDetails());
-console.log(employee1.getEmployeeDetails());
+// console.log(employee1.getDetails());
+// console.log(employee1.getEmployeeDetails());
